@@ -1,24 +1,46 @@
 import React from 'react';
 import {
-  SafeAreaView,
   StyleSheet,
+  Image,
   Text,
+  View,
 } from 'react-native';
+
+import foto from './assets/foto.jpg';
 
 const App = () => {
 
   return (
-    <SafeAreaView style={styles.container}>
-      <Text>Olá, Palloma!</Text>
-    </SafeAreaView>
+    <>
+      <View style={styles.page}>
+        <View style={styles.container_cabecalho} >
+          <Image source={foto} style={styles.foto} />
+          <Text style={styles.texto}> Olá, Palloma!</Text>
+        </View>
+      </View>
+    </>
+
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+  page: {
+    backgroundColor: '#E7E7E7',
+    flex: 1
   },
+  container_cabecalho: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  foto: {
+    width: 250,
+    height: 250,
+    borderRadius: 125
+  },
+  texto: {
+    marginTop: 20
+  }
 });
 
 export default App;
