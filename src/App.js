@@ -15,12 +15,12 @@ const App = () => {
       <View style={styles.page}>
         <View style={styles.container_cabecalho} >
           <Image source={foto} style={styles.foto} />
-          <Text style={styles.textoNome}>PALLOMA GUALTER</Text>
-          <Text style={styles.texto}> Desenvolvedora Mobile</Text>
+          <Text style={styles.nome}>PALLOMA GUALTER</Text>
+          <Text style={styles.funcao}> Desenvolvedora Mobile</Text>
           <View>
-            <Text>Github</Text>
-            <Text>Instagram</Text>
-            <Text>LinkedIn</Text>
+            <Text style={styles.social}>Github</Text>
+            <Text style={styles.social}>Instagram</Text>
+            <Text style={styles.social}>LinkedIn</Text>
           </View>
         </View>
       </View>
@@ -44,10 +44,17 @@ const styles = StyleSheet.create({
     height: 250,
     borderRadius: 125
   },
-  textoNome: {
-    marginTop: 20,
+  nome: {
+    marginTop: 10,
     fontWeight: 'bold',
-    fontSize: 20,
+    fontSize: 26,
+  },
+  funcao: {
+    color: '#939393',
+    marginBottom: 10
+  },
+  social: {
+
   }
 });
 
