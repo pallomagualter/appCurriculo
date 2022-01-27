@@ -16,12 +16,12 @@ const style = StyleSheet.create({
         backgroundColor: '#FFF',
         marginBottom: 20,
     },
+    card_header_text: {
+        fontWeight: 'bold',
+        fontSize: 16,
+    },
     card_content: {
         marginTop: 20,
-    },
-    card_content_text: {
-        color: '#939393',
-        marginBottom: 10,
     },
 });
 

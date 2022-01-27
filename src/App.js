@@ -22,12 +22,12 @@ const App = () => {
 
   return (
     <>
-      <View style={styles.page}>
-        <View style={styles.container_cabecalho}>
-          <Image source={foto} style={styles.foto} />
-          <Text style={styles.nome}>PALLOMA GUALTER</Text>
-          <Text style={styles.funcao}> Desenvolvedora Mobile</Text>
-          <View style={styles.rede_social}>
+      <View style={style.page}>
+        <View style={style.container_cabecalho}>
+          <Image source={foto} style={style.foto} />
+          <Text style={style.nome}>PALLOMA GUALTER</Text>
+          <Text style={style.funcao}> Desenvolvedora Mobile</Text>
+          <View style={style.rede_social}>
             <TouchableOpacity onPress={() => handleRedeSocial('github')}>
               <Icon name="github" size={30} />
             </TouchableOpacity>
@@ -40,14 +40,22 @@ const App = () => {
           </View>
         </View>
 
-        <Card titulo="Formação Acadêmica" />
-        <Card titulo="Experiência Profissional" />
+        <Card titulo="Formação Acadêmica">
+          <Text style={style.card_content_text}>UNIVERSIDADE FEDERAL DO PIAUÍ - UFPI</Text>
+          <Text style={style.card_content_text}>Bacharelado em Ciência da Computação</Text>
+        </Card>
+        <Card titulo="Experiência Profissional">
+          <Text style={style.card_content_text}>Secretaria de Estado da Educação - SEDUC-PI</Text>
+          <Text style={style.card_content_text}>Adebaran Studio</Text>
+          <Text style={style.card_content_text}>Bem Brasil LTDA (Atuando na PRF-PI)</Text>
+          <Text style={style.card_content_text}>Agência de Tecnologia da Informação do Estado do Piauí</Text>
+        </Card>
       </View>
     </>
   );
 };
 
-const styles = StyleSheet.create({
+const style = StyleSheet.create({
   page: {
     backgroundColor: '#E7E7E7',
     flex: 1,
@@ -76,6 +84,10 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     width: '60%',
     marginTop: 20,
+  },
+  card_content_text: {
+    color: '#939393',
+    marginBottom: 10,
   },
 });
 

@@ -8,11 +8,10 @@ const Card = ({ titulo, children }) => {
         <View style={style.card_container}>
             <View style={style.card}>
                 <View style={style.card_header}>
-                    <Text>{titulo}</Text>
+                    <Text style={style.card_header_text}>{titulo}</Text>
                 </View>
                 <View style={style.card_content}>
-                    <Text style={style.card_content_text}>UNIVERSIDADE FEDERAL DO PIAUÍ - UFPI</Text>
-                    <Text style={style.card_content_text}>Bacharelado em Ciência da Computação</Text>
+                    {children}
                 </View>
             </View>
         </View>
