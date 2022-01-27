@@ -3,6 +3,7 @@ import { StyleSheet, Image, Text, View, Alert, TouchableOpacity } from 'react-na
 import Icon from 'react-native-vector-icons/Feather';
 
 import foto from './assets/foto.jpg';
+import Card from './components/Card';
 
 const App = () => {
   function handleRedeSocial(rede_social) {
@@ -39,30 +40,9 @@ const App = () => {
           </View>
         </View>
 
-        <View style={styles.card_container}>
-          <View style={styles.card}>
-            <View style={styles.card_header}>
-              <Text>Experiência Profissional</Text>
-            </View>
-            <View style={styles.card_content}>
-              <Text style={styles.card_content_text}>Secretaria de Estado da Educação - SEDUC-PI</Text>
-              <Text style={styles.card_content_text}>Adebaran Studio</Text>
-              <Text style={styles.card_content_text}>Bem Brasil LTDA (Atuando na PRF-PI)</Text>
-              <Text style={styles.card_content_text}>Agência de Tecnologia da Informação do Estado do Piauí</Text>
-            </View>
-          </View>
-
-          <View style={styles.card}>
-            <View style={styles.card_header}>
-              <Text>Formação Acadêmica</Text>
-            </View>
-            <View style={styles.card_content}>
-              <Text style={styles.card_content_text}>UNIVERSIDADE FEDERAL DO PIAUÍ - UFPI</Text>
-              <Text style={styles.card_content_text}>Bacharelado em Ciência da Computação</Text>
-            </View>
-          </View>
-        </View>
-      </View >
+        <Card titulo="Formação Acadêmica" />
+        <Card titulo="Experiência Profissional" />
+      </View>
     </>
   );
 };
@@ -96,28 +76,6 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     width: '60%',
     marginTop: 20,
-  },
-  card_container: {
-    width: '100%',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: 20,
-  },
-  card: {
-    width: '80%',
-    borderWidth: 2,
-    borderRadius: 5,
-    borderColor: '#939393',
-    padding: 10,
-    backgroundColor: '#FFF',
-    marginBottom: 20,
-  },
-  card_content: {
-    marginTop: 20,
-  },
-  card_content_text: {
-    color: '#939393',
-    marginBottom: 10,
   },
 });
 
