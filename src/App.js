@@ -5,7 +5,6 @@ import Icon from 'react-native-vector-icons/Feather';
 import foto from './assets/foto.jpg';
 
 const App = () => {
-
   function handleRedeSocial(rede_social) {
     switch (rede_social) {
       case 'github':
