@@ -5,7 +5,6 @@
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Desenvolvimento</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
@@ -19,7 +18,7 @@
 <br>
 
 <p align="center">
-  <img alt="appCurriculo" src="https://github.com/pallomagualter/appCurriculo/blob/main/src/assets/appCurriculo.png" width="100%">
+  <img alt="appCurriculo" src="https://github.com/pallomagualter/appCurriculo/blob/main/src/assets/appCurriculo.png" width="35%">
 </p>
 
 ## 🚀 Tecnologias
@@ -30,21 +29,13 @@
 
 Um aplicativo criado durante o curso da DIO Introdução ao React Native, minicurso ministrado pelo [Pablo Henrique](https://github.com/pablohdev).
 
-
-## 🔖 Layout
-
-Nos links abaixo você encontra o layout do projeto web e também do mobile. Lembrando que você precisa ter uma conta no [Figma](http://figma.com/) para acessá-lo.
-
-- [Layout Web](https://www.figma.com/file/mDEbnoojksG4w8sOxmudh3/Happy-Web)
-- [Layout Mobile](https://www.figma.com/file/X27FfVxAgy9f5IFa7ONlph/Happy-Mobile)
-
 ## :information_source: Desenvolvimento
 
 ### :iphone: Mobile:
 
 ```bash
 # Clone o Repositório
-$  git clone https://github.com/pallomagualter/happy.git
+$  git clone https://github.com/pallomagualter/appCurriculo.git
 
 #Acesse o diretório mobile
 $ cd mobile
