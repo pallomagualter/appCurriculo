@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Image, Text, View, Alert } from 'react-native';
+import { StyleSheet, Image, Text, View, Alert, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
 
 import foto from './assets/foto.jpg';
@@ -28,11 +28,18 @@ const App = () => {
           <Text style={styles.nome}>PALLOMA GUALTER</Text>
           <Text style={styles.funcao}> Desenvolvedora Mobile</Text>
           <View style={styles.rede_social}>
-            <Icon name="github" size={30} />
-            <Icon name="instagram" size={30} />
-            <Icon name="linkedin" size={30} />
+            <TouchableOpacity onPress={() => handleRedeSocial('github')}>
+              <Icon name="github" size={30} />
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => handleRedeSocial('instagram')}>
+              <Icon name="instagram" size={30} />
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => handleRedeSocial('linkedin')}>
+              <Icon name="linkedin" size={30} />
+            </TouchableOpacity>
           </View>
         </View>
+
         <View style={styles.card_container}>
           <View style={styles.card}>
             <View style={styles.card_header}>
@@ -56,7 +63,7 @@ const App = () => {
             </View>
           </View>
         </View>
-      </View>
+      </View >
     </>
   );
 };
