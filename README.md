@@ -19,7 +19,7 @@
 <br>
 
 <p align="center">
-  <img alt="appCurriculo" src="/assets/appCurriculo.png" width="100%">
+  <img alt="appCurriculo" src="https://github.com/pallomagualter/appCurriculo/blob/main/src/assets/appCurriculo.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
