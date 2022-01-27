@@ -9,13 +9,13 @@ const App = () => {
   function handleRedeSocial(rede_social) {
     switch (rede_social) {
       case 'github':
-        Alert.alert('https://github.com/pallomagualter');
+        Alert.alert('Meu Github', 'https://github.com/pallomagualter');
         break;
       case 'instagram':
-        Alert.alert('https://www.instagram.com/pallomagualter/');
+        Alert.alert('Meu Instagram', 'https://www.instagram.com/pallomagualter/');
         break;
       case 'linkedin':
-        Alert.alert('https://www.linkedin.com/in/palloma-gualter-983b7338/');
+        Alert.alert('Meu LinkedIn', 'https://www.linkedin.com/in/palloma-gualter-983b7338/');
         break;
     }
   }
