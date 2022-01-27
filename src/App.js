@@ -15,7 +15,13 @@ const App = () => {
       <View style={styles.page}>
         <View style={styles.container_cabecalho} >
           <Image source={foto} style={styles.foto} />
-          <Text style={styles.texto}> Olá, Palloma!</Text>
+          <Text style={styles.textoNome}>PALLOMA GUALTER</Text>
+          <Text style={styles.texto}> Desenvolvedora Mobile</Text>
+          <View>
+            <Text>Github</Text>
+            <Text>Instagram</Text>
+            <Text>LinkedIn</Text>
+          </View>
         </View>
       </View>
     </>
@@ -38,8 +44,10 @@ const styles = StyleSheet.create({
     height: 250,
     borderRadius: 125
   },
-  texto: {
-    marginTop: 20
+  textoNome: {
+    marginTop: 20,
+    fontWeight: 'bold',
+    fontSize: 20,
   }
 });
 
