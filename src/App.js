@@ -5,6 +5,7 @@ import {
   Text,
   View,
 } from 'react-native';
+import Icon from 'react-native-vector-icons/Feather';
 
 import foto from './assets/foto.jpg';
 
@@ -18,7 +19,7 @@ const App = () => {
           <Text style={styles.nome}>PALLOMA GUALTER</Text>
           <Text style={styles.funcao}> Desenvolvedora Mobile</Text>
           <View>
-            <Text style={styles.social}>Github</Text>
+            <Icon name="github" />
             <Text style={styles.social}>Instagram</Text>
             <Text style={styles.social}>LinkedIn</Text>
           </View>
